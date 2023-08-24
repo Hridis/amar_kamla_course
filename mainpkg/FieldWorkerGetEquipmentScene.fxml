@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="571.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FieldWorkerGetEquipmentSceneController">
+   <children>
+      <ImageView fitHeight="116.0" fitWidth="146.0" layoutX="39.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../New%20folder/RJ45-Cable-lan-tester-228x228.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="123.0" fitWidth="116.0" layoutX="278.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../New%20folder/Pass-Through-Tool.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="165.0" text="Cable Tester">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cableTesterComboBox" layoutX="104.0" layoutY="162.0" prefHeight="25.0" prefWidth="89.0" promptText="Quantity" />
+      <Label layoutX="247.0" layoutY="165.0" text="Crimper Tool">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="crimperToolComboBox" layoutX="336.0" layoutY="162.0" prefHeight="25.0" prefWidth="89.0" promptText="Quantity" />
+      <ImageView fitHeight="95.0" fitWidth="116.0" layoutX="522.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../New%20folder/images.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="480.0" layoutY="165.0" text="Power Line Adapters">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="powerLineadapterComboBox" layoutX="615.0" layoutY="162.0" prefHeight="25.0" prefWidth="89.0" promptText="Quantity" />
+      <ImageView fitHeight="110.0" fitWidth="116.0" layoutX="31.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../New%20folder/vdv500820_photo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="28.0" layoutY="398.0" text="Tone and Probe kit">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="toneProbeKitComboBox" layoutX="41.0" layoutY="429.0" prefHeight="25.0" prefWidth="89.0" promptText="Quantity" />
+      <ImageView fitHeight="100.0" fitWidth="126.0" layoutX="273.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../New%20folder/CABLES_UTP_GROUP_1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="280.0" layoutY="408.0" text="Ethernet Cables">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ethernetComboBox" layoutX="283.0" layoutY="429.0" prefHeight="25.0" prefWidth="89.0" promptText="Quantity" />
+      <ImageView fitHeight="110.0" fitWidth="116.0" layoutX="523.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../New%20folder/images%20(1).jpg" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="fiberCableComboBox" layoutX="533.0" layoutY="429.0" prefHeight="25.0" prefWidth="89.0" promptText="Quantity" />
+      <Label layoutX="525.0" layoutY="399.0" text="Fiber Optic Cable">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="205.0" layoutY="508.0" mnemonicParsing="false" onAction="#getSelectedEquipmentButtonOnClick" prefHeight="49.0" prefWidth="263.0" text="Click to request to get selected equipments" />
+      <Button fx:id="cableTesterADDButton" layoutX="39.0" layoutY="200.0" mnemonicParsing="false" onAction="#cableTesterADDButtonOnClick" prefHeight="25.0" prefWidth="55.0" text="ADD" />
+      <Button fx:id="probeKitAddButton" layoutX="25.0" layoutY="465.0" mnemonicParsing="false" onAction="#probeKitAddButtonOnClick" prefHeight="25.0" prefWidth="55.0" text="ADD" />
+      <Button fx:id="etherNetAddButton" layoutX="277.0" layoutY="465.0" mnemonicParsing="false" onAction="#etherNetAddButtonOnClick" prefHeight="25.0" prefWidth="48.0" text="ADD" />
+      <Button fx:id="fiberOpticAddButton" layoutX="526.0" layoutY="465.0" mnemonicParsing="false" onAction="#fiberOpticAddButtonOnClick" prefHeight="25.0" prefWidth="48.0" text="ADD" />
+      <Button fx:id="crimperToolAddButton" layoutX="273.0" layoutY="200.0" mnemonicParsing="false" onAction="#crimperToolAddButtonOnClick" prefHeight="25.0" prefWidth="55.0" text="ADD" />
+      <Button fx:id="adapterAddButton" layoutX="533.0" layoutY="200.0" mnemonicParsing="false" onAction="#adapterAddButtonOnClick" prefHeight="25.0" prefWidth="55.0" text="ADD" />
+      <Button fx:id="cableTesterDeleteButton" layoutX="114.0" layoutY="200.0" mnemonicParsing="false" onAction="#cableTesterDeleteButtonOnClick" prefHeight="25.0" prefWidth="55.0" text="Cancel" />
+      <Button fx:id="crimperToolCancelButton" layoutX="348.0" layoutY="200.0" mnemonicParsing="false" onAction="#crimperToolCancelButtonOnClick" prefHeight="25.0" prefWidth="55.0" text="Cancel" />
+      <Button fx:id="adapterCancelButton" layoutX="603.0" layoutY="200.0" mnemonicParsing="false" onAction="#adapterCancelButtonOnClick" prefHeight="25.0" prefWidth="55.0" text="Cancel" />
+      <Button fx:id="probeKitCancelButton" layoutX="86.0" layoutY="465.0" mnemonicParsing="false" onAction="#probeKitCancelButtonOnClick" prefHeight="25.0" prefWidth="55.0" text="Cancel" />
+      <Button fx:id="etherNetCancelButton" layoutX="335.0" layoutY="465.0" mnemonicParsing="false" onAction="#etherNetCancelButtonOnClick" prefHeight="25.0" prefWidth="55.0" text="Cancel" />
+      <Button fx:id="fiberOpticCancelButton" layoutX="584.0" layoutY="465.0" mnemonicParsing="false" onAction="#fiberOpticCancelButtonOnClick" prefHeight="25.0" prefWidth="55.0" text="Cancel" />
+   </children>
+</AnchorPane>

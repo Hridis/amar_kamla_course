@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="870.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.CustomerAreaWiseSceneController">
+   <children>
+      <TableView fx:id="customerpayRecordTableView" layoutX="19.0" layoutY="93.0" prefHeight="320.0" prefWidth="832.0">
+         <columns>
+            <TableColumn fx:id="areaNameTableColumn" minWidth="7.0" prefWidth="99.0" text="Area Name" />
+            <TableColumn fx:id="statusTableColumn" minWidth="7.0" prefWidth="177.0" text="Status" />
+            <TableColumn fx:id="IdTableColumn" prefWidth="71.0" text="ID" />
+            <TableColumn fx:id="nameTableColumn" prefWidth="101.0" text="Name" />
+            <TableColumn fx:id="paymentMonthtableColumn" prefWidth="91.0" text="Month " />
+            <TableColumn fx:id="packageDetailsTableColumn" prefWidth="176.0" text="Package Details " />
+            <TableColumn fx:id="paymentTableColumn" minWidth="0.0" prefWidth="116.0" text="Payment Date" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

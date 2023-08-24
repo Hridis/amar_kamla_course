@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.FieldWorkerPaymentUpdateSceneController">
+   <children>
+      <Label layoutX="59.0" layoutY="57.0" text="Customer List of Manual Payment">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="customerListManualTableView" layoutX="59.0" layoutY="109.0" prefHeight="268.0" prefWidth="675.0">
+        <columns>
+          <TableColumn fx:id="userNameColumnView" prefWidth="89.0" text="User Name" />
+          <TableColumn fx:id="packagenameColumnView" prefWidth="168.0" text="Package Name and details" />
+            <TableColumn fx:id="billMonthColumnView" prefWidth="91.0" text="Bill Month" />
+            <TableColumn fx:id="areaColumnView" prefWidth="99.0" text="Area" />
+            <TableColumn fx:id="paymentDateColumnView" prefWidth="88.0" text="Payment Date" />
+            <TableColumn fx:id="paymentStatusColumnView" prefWidth="139.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="351.0" layoutY="407.0" mnemonicParsing="false" onAction="#paidButtonOnClick" prefHeight="25.0" prefWidth="71.0" text="Paid" />
+      <Button layoutX="541.0" layoutY="51.0" mnemonicParsing="false" onAction="#loadtableButtonOnClick" prefHeight="33.0" prefWidth="84.0" text="Load List" />
+      <TextField fx:id="userNameTextField" layoutX="334.0" layoutY="55.0" promptText="Enter UserName:" />
+   </children>
+</AnchorPane>
